@@ -16,7 +16,9 @@ class HornedBeast extends React.Component{
         })
     }
     render(){
+    
         return(
+
         //   <div>
         //       <h2>
         //       {this.props.title}
@@ -45,3 +47,6 @@ class HornedBeast extends React.Component{
     }
 }
 export default HornedBeast;
+
+
+
