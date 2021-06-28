@@ -17,15 +17,7 @@ class HornedBeast extends React.Component{
     }
     render(){
         return(
-        //   <div>
-        //       <h2>
-        //       {this.props.title}
-        //       </h2>
-        //       <image src={this.props.url}/>
-        //       <p>
-        //           {this.props.pra}
-        //       </p>
-        //   </div>
+        
         <>
         <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={this.props.url} />
