@@ -10,6 +10,7 @@ class HornedBeast extends React.Component{
         }
     }
 
+    
     increaseOfLikes=()=> {
         this.setState({
             numofliks: this.state.numofliks+1
