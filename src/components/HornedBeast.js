@@ -16,11 +16,15 @@ class HornedBeast extends React.Component{
             numofliks: this.state.numofliks+1
         })
     }
+
+    renderFunction=()=>{
+        this.props.popUpTheCard(this.props.title)
+    }
     render(){
         return(
         
         <div className="hornd">
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} onClick={this.renderFunction}>
   <Card.Img variant="top" src={this.props.url} />
   <Card.Body>
     {/* <Card.Title>{this.props.url}</Card.Title> */}
