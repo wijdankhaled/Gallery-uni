@@ -10,6 +10,7 @@ class HornedBeast extends React.Component{
         }
     }
 
+    
     increaseOfLikes=()=> {
         this.setState({
             numofliks: this.state.numofliks+1
@@ -19,16 +20,9 @@ class HornedBeast extends React.Component{
     
         return(
 
-        //   <div>
-        //       <h2>
-        //       {this.props.title}
-        //       </h2>
-        //       <image src={this.props.url}/>
-        //       <p>
-        //           {this.props.pra}
-        //       </p>
-        //   </div>
-        <>
+        
+        <div className="hornd">
+
         <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={this.props.url} />
   <Card.Body>
@@ -42,7 +36,7 @@ class HornedBeast extends React.Component{
     <Button onClick={this.increaseOfLikes}  variant="primary">like </Button>
   </Card.Body>
 </Card>
-        </>
+</div>
         )
     }
 }
