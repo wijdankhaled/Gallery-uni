@@ -1,7 +1,7 @@
 import React from 'react';
 
 import HornedBeats from './HornedBeast'
-import Data from './Data.json';
+
 class Main extends React.Component{
     render(){
         return(
@@ -9,9 +9,9 @@ class Main extends React.Component{
             
             <>
             {
-                Data.map((item,index)=>{
+               this.props.Data.map((item,index)=>{
                     return(
-                    <HornedBeats title={item.title} pra={item.description}url={item.image_url} key={index}/>
+                    <HornedBeats title={item.title} pra={item.description}url={item.image_url} key={index} popUpTheCard={this.props.popUpTheCard}/>
                     )
                 })
             }
@@ -22,10 +22,9 @@ class Main extends React.Component{
                
 
         )
-                }
-            }
-           
-        
-    
+
+    }
+
+}
 
 export default Main;
