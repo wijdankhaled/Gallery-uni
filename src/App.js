@@ -18,6 +18,12 @@ class App extends React.Component{
     }
   }
 
+  renderfilter=(horn)=>{
+this.setState({
+  Data:horn
+})
+  }
+
   handeleClose=()=>{
     this.setState({show:false})
   }
@@ -38,7 +44,7 @@ popUpTheCard=(title)=>{
     return(
       <div>
         <Header/>
-        <Main Data={this.state.Data} popUpTheCard={this.popUpTheCard}/>
+        <Main Data={this.state.Data} popUpTheCard={this.popUpTheCard} renderfilter={this.renderfilter}/>
         <Footer/>
         <SelectedBeast shown={this.state.show}handeleClose={this.handeleClose}selectedCard={this.state.selectedCard}/>
       </div>
