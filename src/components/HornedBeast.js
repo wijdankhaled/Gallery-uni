@@ -21,10 +21,14 @@ class HornedBeast extends React.Component{
         this.props.popUpTheCard(this.props.title)
     }
     render(){
+    
         return(
+
         
         <div className="hornd">
+
         <Card style={{ width: '18rem' }} onClick={this.renderFunction}>
+
   <Card.Img variant="top" src={this.props.url} />
   <Card.Body>
     {/* <Card.Title>{this.props.url}</Card.Title> */}
@@ -42,3 +46,6 @@ class HornedBeast extends React.Component{
     }
 }
 export default HornedBeast;
+
+
+
